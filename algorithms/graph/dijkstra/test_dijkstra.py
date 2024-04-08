@@ -1,12 +1,13 @@
 import heapq
 
+
 def dijkstra(graph, source):
     dist = {vertex: float('inf') for vertex in graph}
     prev = {vertex: None for vertex in graph}
     dist[source] = 0
 
     pq = [(0, source)]  # Priority queue to store (distance, vertex) pairs
-    visited = set()
+    visited = []  # Changed to list to maintain the order of visit
     unvisited = set(graph.keys())
     steps = []
 
@@ -15,9 +16,11 @@ def dijkstra(graph, source):
         if current_vertex not in unvisited:
             continue
 
-        visited.add(current_vertex)
+        # Appending to the list to maintain order
+        visited.append(current_vertex)
         unvisited.remove(current_vertex)
-        steps.append((f"Choose vertex {current_vertex} (Distance: {current_dist})", visited.copy(), unvisited.copy()))
+        steps.append(
+            (f"Choose vertex {current_vertex} (Distance: {current_dist})", visited.copy(), unvisited.copy()))
 
         for neighbor, weight in graph[current_vertex].items():
             alt = current_dist + weight
@@ -25,9 +28,11 @@ def dijkstra(graph, source):
                 dist[neighbor] = alt
                 prev[neighbor] = current_vertex
                 heapq.heappush(pq, (alt, neighbor))
-                steps.append((f"Update distance to vertex {neighbor} to {alt}", visited.copy(), unvisited.copy()))
+                steps.append(
+                    (f"Update distance to vertex {neighbor} to {alt}", visited.copy(), unvisited.copy()))
 
-    return dist, prev, steps
+    return dist, prev, steps, visited
+
 
 # Example graph represented as an adjacency list
 graph = {
@@ -40,15 +45,16 @@ graph = {
 }
 
 source = '1'
-shortest_distances, predecessors, steps = dijkstra(graph, source)
+shortest_distances, predecessors, steps, visited = dijkstra(graph, source)
 
 print("Step-by-Step Process:")
-for i, (step, visited, unvisited) in enumerate(steps):
+for i, (step, visited_step, unvisited) in enumerate(steps):
     print(f"Step {i + 1}: {step}")
-    print("Visited:", visited)
+    print("Visited:", visited_step)
     print("Unvisited:", unvisited)
     print()
 
+print("\nOrder of visit:", visited)
 print("\nShortest distances from source vertex", source, ":")
 print(shortest_distances)
 print("Predecessors:")

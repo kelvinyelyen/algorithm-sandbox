@@ -60,15 +60,3 @@ def decode(encoded_text, root):
             current_node = root
     
     return decoded_text
-
-# Example usage
-text = "this is an example for huffman encoding"
-root = build_huffman_tree(text)
-codes = {}
-generate_huffman_codes(root, "", codes)
-encoded_text = encode(text, codes)
-decoded_text = decode(encoded_text, root)
-
-print("Original text:", text)
-print("Encoded text:", encoded_text)
-print("Decoded text:", decoded_text)
