@@ -75,27 +75,36 @@ text = "abcdefg"
 encoded_text = encode(text, codes)
 decoded_text = decode(encoded_text, root)
 
+# Calculate average code length
+total_symbols = sum(char_freq.values())
+average_code_length = sum(char_freq[char] * len(codes[char]) for char in char_freq) / total_symbols
+
+# Calculate length of Huffman coded message
+huffman_coded_length_bits = total_symbols * average_code_length
+
 print("Original text:", text)
 print("Encoded text:", encoded_text)
 print("Decoded text:", decoded_text)
+print("Average code length:", average_code_length)
+print("Length of Huffman coded message (in bits):", huffman_coded_length_bits)
 
-G = nx.Graph()
+# G = nx.Graph()
 
-def add_edges(node):
-    if node is None:
-        return
+# def add_edges(node):
+#     if node is None:
+#         return
 
-    if node.left is not None:
-        G.add_edge(node.node_id, node.left.node_id)
-        add_edges(node.left)
+#     if node.left is not None:
+#         G.add_edge(node.node_id, node.left.node_id)
+#         add_edges(node.left)
 
-    if node.right is not None:
-        G.add_edge(node.node_id, node.right.node_id)
-        add_edges(node.right)
+#     if node.right is not None:
+#         G.add_edge(node.node_id, node.right.node_id)
+#         add_edges(node.right)
 
-root.node_id = 0
-add_edges(root)
+# root.node_id = 0
+# add_edges(root)
 
-pos = nx.spring_layout(G)
-nx.draw(G, pos, with_labels=True, node_size=3000, font_size=10, node_color="lightblue", font_color="black")
-plt.show()
+# pos = nx.spring_layout(G)
+# nx.draw(G, pos, with_labels=True, node_size=3000, font_size=10, node_color="lightblue", font_color="black")
+# plt.show()

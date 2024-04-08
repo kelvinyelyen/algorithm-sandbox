@@ -1,6 +1,6 @@
 # Algorithm Sandbox
 
-This repository serves as a curated collection of algorithms and data structures, created to foster exploration, understanding, and mastery of complex computational concepts.
+Curated collection of algorithms and data structures, created to encourage exploration, understanding, and mastery of complex computational concepts.
 
 ## Overview
 
