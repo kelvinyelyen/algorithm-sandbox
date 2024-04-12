@@ -58,10 +58,10 @@ def calculate_bound(path, costs):
 
 # Define the costs dictionary
 costs = {
-    'A': {'A': np.inf, 'B': 4, 'C': 1, 'D': 9},
-    'B': {'A': 3, 'B': np.inf, 'C': -4, 'D': 5},
-    'C': {'A': 4, 'B': 6, 'C': np.inf, 'D': 2},
-    'D': {'A': 6, 'B': 11, 'C': 1, 'D': np.inf}
+    'A': {'A': np.inf, 'B': 4, 'C': 12, 'D': 7},
+    'B': {'A': 5, 'B': np.inf, 'C': np.inf, 'D': 18},
+    'C': {'A': 11, 'B': np.inf, 'C': np.inf, 'D': 6},
+    'D': {'A': 10, 'B': 2, 'C': 3, 'D': np.inf}
 }
 
 # Call the function with the defined costs

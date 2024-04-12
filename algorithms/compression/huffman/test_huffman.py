@@ -66,12 +66,12 @@ def decode(encoded_text, root):
     
     return decoded_text
 
-char_freq = {'a': 8, 'b': 13, 'c': 6, 'd': 11, 'e': 4, 'f': 9, 'g': 19}
+char_freq = {'A': 10, 'E': 15, 'I': 12, 'O': 3, 'U': 4, 'S': 13, 'T': 1}
 
 root = build_huffman_tree(char_freq)
 codes = {}
 generate_huffman_codes(root, "", codes)
-text = "abcdefg"
+text = "AEIOUST"
 encoded_text = encode(text, codes)
 decoded_text = decode(encoded_text, root)
 
