@@ -1,0 +1,63 @@
+### **Algorithms:**
+
+1. [**Sorting Algorithms**](#sorting-algorithms)
+    - [Bubble Sort](#bubble-sort)
+    - [Selection Sort](#selection-sort)
+    - [Insertion Sort](#insertion-sort)
+    - [Merge Sort](#merge-sort)
+    - [Quick Sort](#quick-sort)
+    - [Heap Sort](#heap-sort)
+
+2. [**Search Algorithms**](#searching-algorithms)
+    - [Linear Search](#linear-search)
+    - [Binary Search](#binary-search)
+
+3. [**Graph Algorithms**](#graph-algorithms)
+    - [Breadth-First Search (BFS)](#breadth-first-search-bfs)
+    - [Depth-First Search (DFS)](#depth-first-search-dfs)
+    - [Dijkstra's Algorithm (for shortest paths)](#dijkstras-algorithm-for-shortest-paths)
+    - [Bellman-Ford Algorithm (for shortest paths with negative weights)](#bellman-ford-algorithm-for-shortest-paths-with-negative-weights)
+    - [Floyd-Warshall Algorithm (for all shortest paths)](#floyd-warshall-algorithm-for-all-shortest-paths)
+    - [Prim's Algorithm (for minimum spanning tree)](#prims-algorithm-for-minimum-spanning-tree)
+    - [Kruskal's Algorithm (for minimum spanning tree)](#kruskals-algorithm-for-minimum-spanning-tree)
+
+4. [**Dynamic Programming**](#dynamic-programming)
+    - [Fibonacci Series](#fibonacci-series)
+    - [Knapsack Problem](#knapsack-problem)
+    - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
+    - [Shortest Paths](#shortest-paths)
+    - [Matrix Chain Multiplication](#matrix-chain-multiplication)
+
+5. [**String Algorithms**](#string-algorithms)
+    - [Pattern Searching (Naive, KMP, Rabin-Karp)](#pattern-searching-naive-kmp-rabin-karp)
+    - [Longest Common Substring](#longest-common-substring)
+    - [Edit Distance (Levenshtein Distance)](#edit-distance-levenshtein-distance)
+
+6. [**Greedy Algorithms**](#greedy-algorithms)
+    - [Activity Selection](#activity-selection)
+    - [Fractional Knapsack](#fractional-knapsack)
+    - [Huffman Coding](#huffman-coding)
+    - [Prim's Algorithm (can be implemented greedily)](#prims-algorithm-can-be-implemented-greedily)
+
+7. [**Backtracking Algorithms**](#backtracking-algorithms)
+    - [N-Queens Problem](#n-queens-problem)
+    - [Sudoku Solver](#sudoku-solver)
+    - [Hamiltonian Cycle](#hamiltonian-cycle)
+
+### **Data Structures:**
+
+1. [**Arrays**](#arrays)
+2. [**Linked Lists** (Singly and Doubly)](#linked-lists-singly-and-doubly)
+3. [**Stacks and Queues**](#stacks-and-queues)
+4. [**Trees**](#trees)
+    - [Binary Trees](#binary-trees)
+    - [Binary Search Trees (BST)](#binary-search-trees-bst)
+    - [AVL Trees](#avl-trees)
+    - [Red-Black Trees](#red-black-trees)
+    - [B-Trees](#b-trees)
+5. [**Heaps (Priority Queues)**](#heaps-priority-queues)
+6. [**Hash Tables (Hash Maps)**](#hash-tables-hash-maps)
+7. [**Graphs**](#graphs)
+    - [Directed and Undirected Graphs](#directed-and-undirected-graphs)
+    - [Weighted Graphs](#weighted-graphs)
+    - [Adjacency Matrix and List Representations](#adjacency-matrix-and-list-representations)
