@@ -1,6 +1,6 @@
 # Breadth-First Search (BFS)
 
-BFS is a graph traversal algorithm used to systematically traverse or search a graph. It employs a **queue data structure**, utilizing the First In, First Out (FIFO) method for data processing and management. In BFS, you explore all neighbors of a node before moving to the next level, resulting in a **breadth-first traversal**. The total running time for Breadth First Search is **O(V+E)**. Graph traversal, pathfinding, cycle detection, topological sorting, connected components, and more are among its applications.
+BFS is a graph traversal algorithm used to systematically traverse or search a graph. It employs a **queue data structure**, utilizing the First In, First Out (FIFO) method for data processing and management. In BFS, you explore all neighbors of a node before moving to the next level, resulting in a **breadth-first traversal**. The total running time for Breadth First Search is **O(V+E)**. BFS can also be classified under uninformed search algorithms. Graph traversal, pathfinding, cycle detection, topological sorting, connected components, and more are among its applications.
 
 ![Breadth-First Search](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif)
 
