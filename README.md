@@ -16,5 +16,5 @@ The algorithms in this repository are carefully selected to cover a wide range o
 
 ## Contributing
 
-While this repository primarily serves as my personal learning space, I welcome contributions from fellow professionals who share a passion for algorithms and computational thinking. If you have insights, optimizations, or new algorithms to share, please feel free to open an issue or submit a pull request. 
+While this repository primarily serves as my personal learning space, I welcome contributions from fellow professionals who share a passion for algorithms and computational thinking. If you have insights, optimizations, new algorithms to share, or even better explanations, please feel free to open an issue or submit a pull request. 
 
