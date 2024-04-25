@@ -7,31 +7,50 @@ DFS is a graph traversal algorithm used to systematically traverse or search a g
 ## Pseudocode
 
 ```markdown
-DFS(G, v):
-    for each vertex u in V[G]:
-        color[v] ← WHITE          // Mark all vertices as unvisited
-        π[v] ← NIL                // Set parent of each vertex to null
-    time ← 0                      // Initialize time variable
-    for each vertex v in V[G]:
-        if color[v] = WHITE:      // If vertex v is unvisited
-            Depth_First_Search(v) // Start DFS from vertex v
+DFS(V, E, s):
+
+Input:
+- V: Set of vertices
+- E: Set of edges
+- s: Starting vertex
+
+Variables:
+- V: Set of vertices in the graph
+- E: Set of edges in the graph
+- s: Starting vertex for DFS traversal
+- color: Array to store the color of each vertex (WHITE, GREY, BLACK)
+- π: Array to store the parent of each vertex
+- time: Variable to keep track of the current time during DFS traversal
+
+Initialization:
+- For each vertex v in V:
+  - Set color[v] to WHITE          // Mark all vertices as unvisited
+  - Set π[v] to NIL                // Set parent of each vertex to null
+- time ← 0                          // Initialize time variable
+
+Algorithm:
+- For each vertex v in V:
+  - If color[v] is WHITE:          // If vertex v is unvisited
+    - Depth_First_Search(v)        // Start DFS from vertex v
 
 Depth_First_Search(v):
-    color[v] ← GRAY              // Mark vertex v as visited
-    time ← time + 1              // Increment time
-    d[v] ← time                  // Set discovery time for vertex v
-    for each vertex u adjacent to v:
-        if color[u] = WHITE:     // If vertex u is unvisited
-            π[u] ← v              // Set parent of vertex u to v
-            Depth_First_Search(u) // Recursively explore vertex u
-    color[v] ← BLACK             // Mark vertex v as finished
-    time ← time + 1              // Increment time
-    f[v] ← time                  // Set finishing time for vertex v
+- Set color[v] to GREY             // Mark vertex v as visited
+- Increment time by 1               // Increment time
+- Set d[v] to time                  // Set discovery time for vertex v
+- For each vertex u adjacent to v:
+  - If color[u] is WHITE:          // If vertex u is unvisited
+    - Set π[u] to v                // Set parent of vertex u to v
+    - Depth_First_Search(u)        // Recursively explore vertex u
+- Set color[v] to BLACK            // Mark vertex v as finished
+- Increment time by 1               // Increment time
+- Set f[v] to time                  // Set finishing time for vertex v
 ```
 
-The algorithm involves marking vertices as visited, exploring each vertex and its neighbors, and optionally recording discovery and finishing times.
+The algorithm takes a set of vertices (V), a set of edges (E), and a starting vertex (s) as input. The algorithm initializes variables to keep track of visited vertices, parent pointers, and time. It then explores each vertex in V, starting from the given starting vertex (s). During exploration, it recursively visits adjacent unvisited vertices, marking them as visited and updating parent pointers. Finally, it marks the current vertex as finished. This process continues until all vertices are visited.
 
-To put it simply:
+To put it simply,
+
+### DFS with Recursion:
 
 ```markdown
 DFS(G, v):
@@ -41,7 +60,7 @@ DFS(G, v):
             DFS(G, u)
 ```
 
-DFS with Stack:
+### DFS with Stack:
 
 ```markdown
 DFS(G, start):
@@ -58,3 +77,4 @@ DFS(G, start):
 
 ## Resources
 * [DFS Visualization](https://www.cs.usfca.edu/~galles/visualization/DFS.html)
+* [More Notes](https://www.gatevidyalay.com/depth-first-search-dfs-algorithm/)
