@@ -4,7 +4,7 @@ Curated collection of algorithms and data structures, created to encourage explo
 
 ## Overview
 
-As a seasoned professional in the field of computer science, I recognize the importance of continuous learning and growth. This repository represents my ongoing journey to deepen my understanding of algorithms and refine my problem-solving skills.
+As a seasoned professional in the field of computer science, I recognize the importance of continuous learning and growth. This repository represents my ongoing journey to deepen my understanding of DSA and refine my problem-solving skills.
 
 ## Directory
 
