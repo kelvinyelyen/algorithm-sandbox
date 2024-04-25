@@ -1,6 +1,6 @@
 # Depth-First Search (DFS)
 
-DFS is a graph traversal algorithm used to systematically traverse or search a graph. It employs a **stack data structure**, utilizing the Last In, First Out (LIFO) method for data processing and management, alternatively, DFS can be implemented using **recursion**, where the call stack of the programming language serves as the implicit stack. In DFS, exploration extends as deeply as possible along a branch before backtracking, resulting in a **depth-first traversal**. The total running time for Depth First Search is **θ (V+E)**. Graph traversal, pathfinding, cycle detection, topological sorting, connected components, and more are among its applications.
+DFS is a graph traversal algorithm used to systematically traverse or search a graph. It employs a **stack data structure**, utilizing the Last In, First Out (LIFO) method for data processing and management, alternatively, DFS can be implemented using **recursion**, where the call stack of the programming language serves as the implicit stack. In DFS, exploration extends as deeply as possible along a branch before backtracking, resulting in a **depth-first traversal**. The total running time for Depth First Search is **θ (V+E)**. DFS can also be classified under uninformed search algorithms. Graph traversal, pathfinding, cycle detection, topological sorting, connected components, and more are among its applications.
 
 ![Depth-First Search](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif)
 
