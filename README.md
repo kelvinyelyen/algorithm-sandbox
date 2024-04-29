@@ -1,6 +1,6 @@
 # Algorithm Sandbox
 
-Curated collection of algorithms and data structures, created to encourage exploration, understanding, and mastery of complex computational concepts.
+Python implementation of algorithms and data structures, created to encourage exploration, understanding, and mastery of complex computational concepts.
 
 ## Overview
 
