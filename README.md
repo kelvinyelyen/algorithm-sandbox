@@ -1,3 +1,3 @@
 # Algorithm-Sandbox
 
-Python implementation of algorithms and data structures, created to encourage exploration, understanding, and mastery of complex computational concepts. [Directory](/DIRECTORY.md).
+Python implementations of standard algorithms and data structures for study and reference. [Directory](/DIRECTORY.md).
