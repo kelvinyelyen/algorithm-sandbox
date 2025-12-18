@@ -7,14 +7,19 @@
     - [Merge Sort](#merge-sort)
     - [Quick Sort](#quick-sort)
     - [Heap Sort](#heap-sort)
+    - [Counting Sort](#counting-sort)
+    - [Radix Sort](#radix-sort)
+    - [Bucket Sort](#bucket-sort)
 
 2. [**Search Algorithms**](#searching-algorithms)
     - [Linear Search](#linear-search)
     - [Binary Search](#binary-search)
+    - [Interpolation Search](#interpolation-search)
 
 3. [**Graph Algorithms**](#graph-algorithms)
     - [Breadth-First Search (BFS)](#breadth-first-search-bfs)
     - [Depth-First Search (DFS)](#depth-first-search-dfs)
+    - [Topological Sort](#topological-sort)
     - [Dijkstra's Algorithm (for shortest paths)](#dijkstras-algorithm-for-shortest-paths)
     - [Bellman-Ford Algorithm (for shortest paths with negative weights)](#bellman-ford-algorithm-for-shortest-paths-with-negative-weights)
     - [Floyd-Warshall Algorithm (for all shortest paths)](#floyd-warshall-algorithm-for-all-shortest-paths)
@@ -23,6 +28,7 @@
 
 4. [**Dynamic Programming**](#dynamic-programming)
     - [Fibonacci Series](#fibonacci-series)
+    - [Coin Change](#coin-change)
     - [Knapsack Problem](#knapsack-problem)
     - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
     - [Shortest Paths](#shortest-paths)
@@ -30,19 +36,31 @@
 
 5. [**String Algorithms**](#string-algorithms)
     - [Pattern Searching (Naive, KMP, Rabin-Karp)](#pattern-searching-naive-kmp-rabin-karp)
+    - [Z Algorithm](#z-algorithm)
     - [Longest Common Substring](#longest-common-substring)
     - [Edit Distance (Levenshtein Distance)](#edit-distance-levenshtein-distance)
 
 6. [**Greedy Algorithms**](#greedy-algorithms)
     - [Activity Selection](#activity-selection)
+    - [Job Sequencing](#job-sequencing)
     - [Fractional Knapsack](#fractional-knapsack)
     - [Huffman Coding](#huffman-coding)
     - [Prim's Algorithm (can be implemented greedily)](#prims-algorithm-can-be-implemented-greedily)
 
 7. [**Backtracking Algorithms**](#backtracking-algorithms)
     - [N-Queens Problem](#n-queens-problem)
+    - [Subset Sum](#subset-sum)
     - [Sudoku Solver](#sudoku-solver)
     - [Hamiltonian Cycle](#hamiltonian-cycle)
+
+8. [**Machine Learning**](#machine-learning)
+    - [Linear Regression](#linear-regression)
+    - [Logistic Regression](#logistic-regression)
+    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
+    - [Naive Bayes](#naive-bayes)
+    - [Decision Trees](#decision-trees)
+    - [Random Forest](#random-forest)
+    - [Support Vector Machine (SVM)](#support-vector-machine-svm)
 
 ### **Data Structures:**
 
@@ -55,6 +73,10 @@
     - [AVL Trees](#avl-trees)
     - [Red-Black Trees](#red-black-trees)
     - [B-Trees](#b-trees)
+    - [Segment Tree](#segment-tree)
+    - [Fenwick Tree (BIT)](#fenwick-tree-bit)
+    - [Trie](#trie)
+    - [Disjoint Set (Union-Find)](#disjoint-set-union-find)
 5. [**Heaps (Priority Queues)**](#heaps-priority-queues)
 6. [**Hash Tables (Hash Maps)**](#hash-tables-hash-maps)
 7. [**Graphs**](#graphs)
